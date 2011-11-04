@@ -1,3 +1,9 @@
+# revision 18345
+# category Package
+# catalog-ctan /macros/latex/contrib/nag
+# catalog-date 2010-05-18 23:03:54 +0200
+# catalog-license lppl
+# catalog-version 0.622
 Name:		texlive-nag
 Version:	0.622
 Release:	1
@@ -51,6 +57,7 @@ detects many of the "sins" described in l2tabu.
 #- source
 %doc %{_texmfdistdir}/source/latex/nag/nag.dtx
 %doc %{_texmfdistdir}/source/latex/nag/nag.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,3 +68,5 @@ detects many of the "sins" described in l2tabu.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
