@@ -1,11 +1,11 @@
-# revision 18345
+# revision 24741
 # category Package
 # catalog-ctan /macros/latex/contrib/nag
-# catalog-date 2010-05-18 23:03:54 +0200
+# catalog-date 2011-12-03 11:39:13 +0100
 # catalog-license lppl
-# catalog-version 0.622
+# catalog-version 0.7
 Name:		texlive-nag
-Version:	0.622
+Version:	0.7
 Release:	1
 Summary:	Detecting and warning about obsolete LaTeX commands
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 Old habits die hard. All the same, there are commands, classes
@@ -30,19 +27,19 @@ obsolete things. As an example, we provide an extension that
 detects many of the "sins" described in l2tabu.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
