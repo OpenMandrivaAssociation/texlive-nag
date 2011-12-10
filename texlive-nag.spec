@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version 0.7
 Name:		texlive-nag
-Version:	0.7
+Version:	0.700
 Release:	1
 Summary:	Detecting and warning about obsolete LaTeX commands
 Group:		Publishing
