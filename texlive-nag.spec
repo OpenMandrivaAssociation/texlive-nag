@@ -6,7 +6,7 @@
 # catalog-version 0.7
 Name:		texlive-nag
 Version:	0.700
-Release:	2
+Release:	3
 Summary:	Detecting and warning about obsolete LaTeX commands
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nag
