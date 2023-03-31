@@ -1,6 +1,6 @@
 Name:		texlive-nag
 Version:	24741
-Release:	1
+Release:	2
 Summary:	Detecting and warning about obsolete LaTeX commands
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nag
