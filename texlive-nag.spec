@@ -3,7 +3,7 @@ Version:	24741
 Release:	2
 Summary:	Detecting and warning about obsolete LaTeX commands
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nag
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/nag
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nag.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nag.doc.r%{version}.tar.xz
